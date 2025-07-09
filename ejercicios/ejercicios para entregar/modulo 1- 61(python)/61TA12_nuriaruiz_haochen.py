@@ -67,4 +67,10 @@ while True:
         break
 
     #Ha ganado. (20 pixeles)
+    contador2 = 0
+    if tablero[fila][columna] == " X ":
+        contador2 += 1
+        if contador2 == 20:
+            print("¡Felicidades! Has hundido la flota")
+            break
     
