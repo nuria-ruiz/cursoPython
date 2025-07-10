@@ -1,0 +1,41 @@
+body {
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p {
+    color: brown;
+    font-size: 12px;
+}
+
+h4 {
+
+}
+
+.rojo{
+    color: red;
+}
+
+.centrado{
+    text-align: center;
+}
+
+div > table{
+    margin-left: 50px;
+    border: #666666 solid 2px;
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background: chartreuse;
+    border: white solid 5px;
+    border-radius: 50%;
+}
