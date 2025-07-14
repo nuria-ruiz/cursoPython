@@ -1,0 +1,86 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(237, 249, 229);
+}
+
+header{
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(173, 101, 240);
+    display: flex;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+#image_h{
+    margin: 0 auto;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul > li{
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav > ul >li >a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul >li:hover{
+    font-size: 32px;
+    color: rgb(78, 8, 143);
+}
+
+footer>p:hover{
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+main{
+    width: 100vw;
+    margin: 15px;
+    display: flex;
+}
+
+aside{
+    width: 30vw;
+    margin: 15px;
+    background-color: azure;
+    border-radius: 8px;
+}
+
+section{
+    width: 70vw;
+    margin: 15px;
+    background-color: azure;
+    border-radius: 8px;
+}
+
+section >p {
+    padding: 20px;
+    background-color: azure;
+}
+
+aside > ul{
+    list-style: none;
+    background-color: azure;
+    text-decoration: none;
+    color:rgb(78, 8, 143)
+}
+
+aside > ul > li{
+    background-color: azure;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+
+<body>
+    <table>
+        <!-- tr*4>td*4>button -->
+        <tr>
+            <td colspan="4">
+                <!-- de esta manera "se unen casillas" como en excel -->
+                <form>
+                    <input class="input" id="input" placeholder="0">
+                    <!-- como buena practica en html se usan comillas dobles -->
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="lightButton">C</button>
+            </td>
+            <td>
+                <button class="lightButton">+/-</button>
+            </td>
+            <td>
+                <button class="lightButton">%</button>
+            </td>
+            <td>
+                <button class="acentButton">÷</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="darkButton">7</button>
+            </td>
+            <td>
+                <button class="darkButton">8</button>
+            </td>
+            <td>
+                <button class="darkButton">9</button>
+            </td>
+            <td>
+                <button class="acentButton">x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="darkButton">4</button>
+            </td>
+            <td>
+                <button class="darkButton">5</button>
+            </td>
+            <td>
+                <button class="darkButton">6</button>
+            </td>
+            <td>
+                <button class="acentButton">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="darkButton">1</button>
+            </td>
+            <td>
+                <button class="darkButton">2</button>
+            </td>
+            <td>
+                <button class="darkButton">3</button>
+            </td>
+            <td>
+                <button class="acentButton">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="ceroButton darkButton">0</button>
+            </td>
+            <td>
+                <button class="darkButton">,</button>
+            </td>
+            <td>
+                <button class="acentButton">=</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="acentButton">x&#178</button>
+                <!-- codigo ascii -->
+            </td>
+            <td>
+                <button class="acentButton">x&#179</button>
+            </td>
+            <td>
+                <button class="acentButton">PI</button>
+            </td>
+            <td>
+                <button class="acentButton">&radic;</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

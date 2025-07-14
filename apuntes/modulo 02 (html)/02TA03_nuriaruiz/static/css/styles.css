@@ -1,0 +1,90 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(57, 94, 207);
+}
+
+
+header{
+    width: 75vw;
+    height: 15vh;
+    background-color: azure;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+header>p, nav>p, section>p, article>p, footer>p{
+    background-color: azure;
+    color:rgb(57, 94, 207);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+main{
+    width: 75vw;
+    height: auto;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main>section{
+    width: 75vw;
+    height: 50vh;
+    background-color: rgb(240, 255, 255);
+    border-radius: 8px;
+    justify-content:center;
+    align-items:center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(240, 255, 255, 0.7)
+}
+
+section>p{
+    background-color: transparent;
+}
+
+section>article{
+    width: 40vw;
+    height: 10vh;
+    background-color: azure;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+nav{
+    width: 30vw;
+    height: 50vh;
+    background-color: azure;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 10px;
+    opacity: 0.7
+}
+
+footer{
+    width: 75vw;
+    height: 10vh;
+    background-color: azure;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    opacity: 0.7;
+}
