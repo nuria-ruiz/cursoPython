@@ -1,0 +1,31 @@
+:root{
+    --color-principal: #2db5db;
+}
+
+.box{
+
+    color: var(--color-principal)
+    /* m10p */
+    margin: 10%;
+    margin: 10px;
+    /* p5-10 */
+    padding: 5px 10px;
+    /* w100p */
+    width: 100%;
+    /* h100p */
+    height: 100%;
+    /* bgc */
+    background-color: #fff;
+    /* c#333 */
+    color: #333;
+    /* dn */
+    display: none;
+    /* posa */
+    position: absolute;
+    /* ta:c */
+    text-align: center;
+    /* fsz13 */
+    font-size: 13px;
+
+    /* mira los apuntes mejor chocho */
+}

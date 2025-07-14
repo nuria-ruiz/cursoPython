@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./resumen_form.css">
+</head>
+
+<body>
+    <form action="procesar.php" method="get">
+        <!-- o bien method = post -->
+        <fieldset>
+        <legend>datos personales</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <!-- id obligatorio   name es la cajita donde se guarda la info-->
+         <input type="email" id="email" name="email" required>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+
+</html>

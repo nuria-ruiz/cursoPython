@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- ! + enter = estructura inicial -->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./resumen_emmet.css">
+    <!--  head(o lo que sea) + enter = <head></head> -->
+    <style>
+        .modificar {
+            color: blue;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contendedor"></div>
+    <div id="container" class="rojo"></div>
+    <!-- cada id solo puede identificar una cosa -->
+
+
+    <!-- div#lista>ul*2>li*5.cosas -->
+    <div id="lista">
+        <ul>
+            <li class="cosas"></li>
+            <li class="cosas"></li>
+            <li class="cosas"></li>
+            <li class="cosas"></li>
+            <li class="cosas"></li>
+        </ul>
+        <ul>
+            <li class="cosas"></li>
+            <li class="cosas"></li>
+            <li class="cosas"></li>
+            <li class="cosas"></li>
+            <li class="cosas"></li>
+        </ul>
+    </div>
+
+    <!-- div#lista>ul>li.cosas$*5 -->
+
+    <div id="lista">
+        <ul>
+            <li class="cosas1"></li>
+            <li class="cosas2"></li>
+            <li class="cosas3"></li>
+            <li class="cosas4"></li>
+            <li class="cosas5"></li>
+        </ul>
+    </div>
+
+    <!-- a{opcion $}*3 -->
+    <a href="">opcion 1</a><a href="">opcion 2</a><a href="">opcion 3</a>
+    <!-- (header>nav>ul>li*5)+(main>section*2>article*3)+footer -->
+    <header>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+        <section>
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+    </main>
+    <footer></footer>
+
+    <!-- span = lo mismo que div pero para lineas -->
+    <p>Lorem <span>ipsum dolor</span> sit, amet consectetur adipisicing elit. Consequuntur modi doloribus veniam nemo
+        est illo.</p>
+
+    <!-- a + enter -->
+    <a href=""></a>
+
+    <!-- div>ul>span^p -->
+    <div>
+        <ul><span></span></ul>
+        <p></p>
+    </div>
+
+    <!-- div.box.big.round -->
+    <div class="box big round"></div>
+
+    <!-- img[src="img$.jpg" alt="imagen $"]*3 -->
+    <img src="img1.jpg" alt="imagen 1"><img src="img2.jpg" alt="imagen 2"><img src="img3.jpg" alt="imagen 3">
+
+
+</body>
+
+</html>
