@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+#bloquepadre{
+    width: 500px;
+    height: 540px;
+}
+
+#cuadro1{
+    width: 80%;
+    height: 380px;
+    background-color: red;
+    float: right;
+    border-left:10px solid black;
+    border-bottom: 10px solid black ;
+}
+
+#cuadro2, #cuadro3{
+    width: 20%;
+    height: 190px;
+    background-color: white;
+    float: left;
+    border-bottom: 10px solid black;
+}
+
+#cuadro4{
+    width: 20%;
+    height: 160px;
+    background-color: blue;
+    float: left;
+}
+
+#cuadro5{
+    width: 65%;
+    height: 160px;
+    background-color: white;
+    float: left;
+    border-right: 10px solid black ;
+    border-left: 10px solid black ;
+}
+
+#cuadro6{
+    width: 15%;
+    height: 80px;
+    background-color: blue;
+    float: right;
+    border-bottom: 10px solid black ;
+}
+
+#cuadro7{
+    width: 15%;
+    height: 80px;
+    background-color: yellow;
+    float: right;
+}
