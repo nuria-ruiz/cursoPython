@@ -1,6 +1,7 @@
 :root {
   --color-principal: #cdf0fa;
   --color-secundario: #076e8b;
+  
 }
 
 * {
@@ -26,11 +27,11 @@ header {
   margin: 20px;
 }
 
-.cabecera{}
-
 img {
-  border-radius: 30px;
+  border-radius: 90px;
   box-shadow: 5px 2px 5px 3px rgba(0, 0, 0, 0.384);
+  height: 155px;
+  width: 155px;
 }
 
 body,
@@ -52,7 +53,7 @@ nav,
 nav>ul,
 nav>ul>li,
 header,
-div,
+header>div,
 h1,
 h2,
 a {
@@ -104,6 +105,8 @@ section>ul>li>ul>li {
   font-size: 15px;
 }
 
+
+
 section {
   width: 80vw;
   padding: 30px;
@@ -113,8 +116,6 @@ a {
   text-decoration: none;
 
 }
-
-
 
 footer {
   text-align: center;
