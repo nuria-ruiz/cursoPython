@@ -1,0 +1,71 @@
+button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+button:hover{
+    background-color: red;
+}
+
+@keyframes mover{
+    from{transform: translateX(0);}
+    to{transform: translateX(200px);}
+}
+
+@keyframes rebote{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-50px);}
+    100% {transform: translateY(0);}
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: mover 2s ease-in-out infinite;
+}
+
+.bola{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    animation: rebote 1s ease-in-out infinite;
+}
+
+.bola:hover{
+    animation-play-state: paused;
+}
+
+@keyframes animacion-compleja{
+    0% {background: blue; transform: scale(1) rotate(0deg);}
+    50% {background: yellow; transform: scale(1.5) rotate(180deg);}
+    100% {background: blue; transform: scale(1) rotate(360deg);}
+}
+
+.elemento{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+} 
+
+.elemento:hover{
+    animation: animacion-compleja 2s infinite;
+}
+
+@keyframes escribir{
+    from{ width: 0;}
+    to{width: 100%;}
+}
+
+.texto{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: escribir 5s steps(20, end) forwards;
+}
+
