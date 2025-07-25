@@ -1,0 +1,24 @@
+:root {
+  --color-principal: #acc7e5;
+  --color-secundario: #ecf4ff;
+  --color-claro: #ecffff;
+  --color-oscuro:#213d62;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imagen{
+  color: 2px solid var(--color-principal);
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--color-principal);
+}
