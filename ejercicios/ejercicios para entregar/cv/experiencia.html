@@ -6,59 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Núria</title>
     <link rel="stylesheet" href="./static/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="imagen">
-            <img src="./static/img/cara.jpeg" alt="foto de cara">
-        </div>
-        <div class="cabecera">
-            <h1>Núria Ruiz</h1>
-            <h2>full-stack programmer</h2>
-        </div>
+    <div class="container-fluid">
+        <header>
+            <div class="row cabecera">
+                <div class="col-lg-2 col-sm-12 imagen">
+                    <img src="./static/img/cara.jpeg" alt="foto de cara">
+                </div>
+                <div class="col-lg-10 col-sm-12 nombre">
+                    <h1>Núria Ruiz</h1>
+                    <h2>full-stack programmer</h2>
+                </div>
+            </div>
+        </header>
 
-    </header>
-    <main>
-        <nav>
-            <ul>
-                <li><a href="./index.html" class="negativo">Sobre mi</a></li>
-                <li><a href="./experiencia.html" class="negativo">Experiencia laboral</a></li>
-                <li><a href="./educación.html" class="negativo">Educación</a></li>
-                <li><a href="./Habilidades.html" class="negativo">Habilidades</a></li>
-                <li><a href="./contacto.html" class="negativo">Contacto</a></li>
-            </ul>
-        </nav>
-        <section>
-            <h3>Experiencia laboral</h3>
-            <ul>
-                <li>2023 - actualidad <strong>Lorem, ipsum dolor</strong>
-                    <p>Lorem, ipsum dolor sit amet consectetur</p>
-                    <ul>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                    </ul>
-                </li>
-                <li>2020 - 2023 <strong>Lorem, ipsum dolor</strong>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae similique dignissimos esse natus,
-                        quidem nostrum.</p>
-                </li>
-                <li>2019 - 2020 <strong>Lorem, ipsum dolor</strong>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae similique dignissimos esse natus,
-                        quidem nostrum.</p>
-                </li>
-                <li>2918 - 2019 <strong>Lorem, ipsum dolor</strong>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae similique dignissimos esse natus,
-                        quidem nostrum.</p>
-                </li>
-            </ul>
-        </section>
+        <main>
+            <div class="row">
+                <div class="col-lg-2 index">
+                    <nav>
+                        <ul>
+                            <li><a href="./sobremi.html">Sobre mi</a></li>
+                            <li><a href="./experiencia.html">Experiencia laboral</a></li>
+                            <li><a href="./educación.html">Educación e idiomas</a></li>
+                            <li><a href="./mas.html">Otros</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-    </main>
-    <footer>
-        <p>&copy; copyright. Made with &hearts; in Barcelona by Núria</a></p>
-    </footer>
+                <div class="col-lg-10 info">
+                    <section>
+                        <div>
+                            <h3>Experiencia laboral</h3>
+                            <ul>
+                                <li><strong>GAME MASTER</strong>
+                                    <p>Misterios de kemet</p>
+                                    <p>Octubre 2023 - Junio 2025</p>
+                                    <ul>
+                                        <li>Interpretación de personajes y gestión de grupos.</li>
+                                        <li>Atención al cliente y gestión de caja.</li>
+                                        <li>Mantenimiento y preparación de las salas.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>PROFESORA EN ARTES ESCÉNICAS</strong>
+                                    <p>Espai Lúdic/la puça espectacles/ACD Team</p>
+                                    <p>Octubre 2021 - Junio 2025 </p>
+                                    <ul>
+                                        <li>Coordinación y ejecución de actividades extraescolares y eventos para todas las edades</li>
+                                    </ul>
+                                </li>
+                                <li><strong>PRACTICAS EN GESTIÓN Y ADMINISTRACIÓN</strong>
+                                    <p>Asociación Juvenil de teatro Always</p>
+                                    <p>Septiembre 2016 - Febrero 2024</p>
+                                    <ul>
+                                        <li>Gestión de tesorería y funciones administrativas.</li>
+                                        <li>Coordinación con entidades publicas.</li>
+                                        <li>Promoción de actuaciones y actividades.</li>
+                                        <li>Creación de textos y vestuario para las representaciones.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>DEPENDIENTA Y GESTIÓN DE TIENDA</strong>
+                                    <p>Clarel club Dia</p>
+                                    <p>Julio 2019 - Noviembre 2019</p>
+                                    <ul>
+                                        <li>Gestión de caja, contabilidad y control de inventario.</li>
+                                        <li>Recepción de mercancías y reposición de productos.</li>
+                                        <li>Atención al cliente y mantenimiento del espacio de venta.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col-12 foooter">
+                    <p>&copy; copyright. Made with &hearts; in Barcelona by Núria</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

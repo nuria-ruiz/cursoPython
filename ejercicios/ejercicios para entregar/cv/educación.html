@@ -6,88 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Núria</title>
     <link rel="stylesheet" href="./static/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="cabecera">
-            <div class="imagen">
-                <img src="./static/img/cara.jpeg" alt="foto de cara">
+    <div class="container-fluid">
+        <header>
+            <div class="row cabecera">
+                <div class="col-lg-2 col-sm-12 imagen">
+                    <img src="./static/img/cara.jpeg" alt="foto de cara">
+                </div>
+                <div class="col-lg-10 col-sm-12 nombre">
+                    <h1>Núria Ruiz</h1>
+                    <h2>full-stack programmer</h2>
+                </div>
             </div>
-            <div class="nombre">
-                <h1>Núria Ruiz</h1>
-                <h2>full-stack programmer</h2>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col-lg-2 index">
+                    <nav>
+                        <ul>
+                            <li><a href="./sobremi.html">Sobre mi</a></li>
+                            <li><a href="./experiencia.html">Experiencia laboral</a></li>
+                            <li><a href="./educación.html">Educación e idiomas</a></li>
+                            <li><a href="./mas.html">Otros</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-lg-10 info">
+                    <section>
+                        <div>
+                            <h3><strong>Educación</strong></h3>
+                            <ul>
+                                <li> <strong>Python con IA</strong>
+                                    <p>Fundació esplai, programa "Enfoca't"</p>
+                                    <p>Julio 2025 - actualidad</p>
+                                    <ul>
+                                        <li>Html y CSS</li>
+                                        <li>Python</li>
+                                        <li>Java Script</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Ciclo superior en artes escénicas</strong>
+                                    <p>El timbal, centre de formació i creació escénica</p>
+                                    <p>Octubre 2017 - Junio 2021</p>
+                                </li>
+                                <li><strong>Bachillerato</strong>
+                                    <p>I.E.S. Baldiri Guilera</p>
+                                    <p>Septiembre 2015 - Junio 2017</p>
+                                </li>
+                            </ul>
+
+                            <table>
+                                <tr>
+                                    <th>Idiomas</th>
+                                    <th>Nivel</th>
+                                    <th>Academia</th>
+                                    <th>Comentarios</th>
+                                </tr>
+                                <tr>
+                                    <td>Castellano</td>
+                                    <td>Materno</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Catalán</td>
+                                    <td>Materno</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Inglés</td>
+                                    <td>B2</td>
+                                    <td>Let's go english</td>
+                                    <td>Extra: Formación no regulada y uso habitual del idioma</td>
+                                </tr>
+                                <tr>
+                                    <td>Japonés</td>
+                                    <td>A2</td>
+                                    <td>Escola Oficial d'Idiomes</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
-
-    </header>
-    <main>
-        <nav>
-            <div class="index">
-                <ul>
-                    <li><a href="./index.html" class="negativo">Sobre mi</a></li>
-                    <li><a href="./experiencia.html" class="negativo">Experiencia laboral</a></li>
-                    <li><a href="./educación.html" class="negativo">Educación</a></li>
-                    <li><a href="./Habilidades.html" class="negativo">Habilidades</a></li>
-                    <li><a href="./contacto.html" class="negativo">Contacto</a></li>
-                </ul>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col-12 foooter">
+                    <p>&copy; copyright. Made with &hearts; in Barcelona by Núria</a></p>
+                </div>
             </div>
-        </nav>
-        <section>
-            <h3>Educación</h3>
-            <ul>
-                <li>julio 2025 - actualidad <strong>Python con IA</strong>
-                    <p>Fundació esplai, programa "Enfoca't"</p>
-                    <ul>
-                        <li>Html y CSS</li>
-                        <li>Python</li>
-                        <li>Java Script</li>
-                    </ul>
-                </li>
-                <li>2020 - 2023 <strong>Lorem, ipsum dolor</strong>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae similique dignissimos esse natus,
-                        quidem nostrum.</p>
-                </li>
-                <li>2019 - 2020 <strong>Lorem, ipsum dolor</strong>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae similique dignissimos esse natus,
-                        quidem nostrum.</p>
-                </li>
-            </ul>
-
-            <table>
-                <tr>
-                    <th>Idiomas</th>
-                    <th>Nivel</th>
-                    <th>Academia</th>
-                    <th>Comentarios</th>
-                </tr>
-                <tr>
-                    <td>Castellano</td>
-                    <td>Materno</td>
-                </tr>
-                <tr>
-                    <td>Catalán</td>
-                    <td>Materno</td>
-                </tr>
-                <tr>
-                    <td>Inglés</td>
-                    <td>B2</td>
-                    <td>Let's go english</td>
-                    <td>Extra: Formación no regulada y uso habitual del idioma</td>
-                </tr>
-                <tr>
-                    <td>Japonés</td>
-                    <td>A2</td>
-                    <td>Escola Oficial d'Idiomes</td>
-                </tr>
-
-            </table>
-        </section>
-
-    </main>
-    <footer>
-        <p>&copy; copyright. Made with &hearts; in Barcelona by Núria</a></p>
-    </footer>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
