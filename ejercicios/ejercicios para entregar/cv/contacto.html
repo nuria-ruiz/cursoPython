@@ -40,18 +40,20 @@
                     <section>
                         <div>
                             <h3>Contacto</h3>
-                            <h4>¿Tienes un trabajo para mi?</h4>
                             <p>Contactame a través de el siguiente formulario:</p>
                             <form name="contacto" method="get" action="url que no tengo">
-                                <p>Yo ya me he presentado, ¡és tu turno!</p>
-                                <input type="text" placeholder="Introduce tu nombre">
-                                <p>Dejame tus datos para que pueda contactar contigo:</p>
-                                <input type="tel" placeholder="Teléfono">
-                                <input type="email" placeholder="E-mail">
-                                <p>¿Quieres dejarme un mensaje?</p>
+                                <label for="nombre">Yo ya me he presentado, ¡és tu turno!</label>
+                                <input type="text" placeholder="Introduce tu nombre" id="nombre" name="nombre">
+                                <div class="rojo" id="errorNombre"></div>
+                                <label for="datos">Dejame tus datos para que pueda contactar contigo:</label>
+                                <input type="tel" placeholder="Teléfono" id="telefono" name="telefono">
+                                <div class="rojo" id="errorTelefono"></div>
+                                <input type="email" placeholder="E-mail" id="email" name="email">
+                                <div class="rojo" id="errorEmail"></div>
+                                <label for="mensaje">¿Quieres dejarme un mensaje?</label>
                                 <textarea class="mensaje"></textarea>
                                 <p>¡Gracias por el interés!</p>
-                                <button>Enviar</button>
+                                <button type="submit" id="submit"></button>
                             </form>
                         </div>
                     </section>
@@ -67,6 +69,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./static/js/main.js"></script>
 </body>
 
 </html>
