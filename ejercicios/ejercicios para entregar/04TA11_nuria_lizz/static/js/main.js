@@ -293,7 +293,55 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //9. tipo de desarrollador
-    
+    const validarTipo = () => {
+        if (!tipo.value) return showError("error-tipo", "Selecciona un tipo de desarrollador.");
+        clearError("error-tipo");
+        return true;
+    }
+
+    const validarTerminos = () => {
+        if (!terminos.checked) return showError("error-terminos", "Debes aceptar los términos.");
+        clearError("error-terminos");
+        return true;
+    }
+
+    const mostrarSubformulario = () => {
+        const sub = document.getElementById("subformulario");
+        const opciones = document.getElementById("opcionesTecnologia");
+        sub.style.display = tipo.value ? "block" : "none";
+
+        let opcionesHTML = "";
+        if (tipo.value === "backend") {
+            opcionesHTML = `
+          <div class="form-check"><input class="form-check-input" type="checkbox"> Python</div>
+          <div class="form-check"><input class="form-check-input" type="checkbox"> PHP</div>
+          <div class="form-check"><input class="form-check-input" type="checkbox"> Java</div>
+          <div class="form-check"><input class="form-check-input" type="checkbox"> C++</div>
+        `;
+        } else if (tipo.value === "frontend") {
+            opcionesHTML = `
+          <div class="form-check"><input class="form-check-input" type="checkbox"> ReactJS</div>
+          <div class="form-check"><input class="form-check-input" type="checkbox"> Angular</div>
+          <div class="form-check"><input class="form-check-input" type="checkbox"> Vue</div>
+        `;
+        } else {
+            opcionesHTML = "<p class='text-muted'>Fullstack: todas las tecnologías.</p>";
+        }
+        opciones.innerHTML = opcionesHTML;
+    }
+
+      // Eventos
+    const campos = [nombre, email, password, confirmPassword, fechaNacimiento, telefono, dni, web, tipo]
+    campos.forEach(input => {
+      input.addEventListener("input", () => validarCampos());
+    });
+    terminos.addEventListener("change", validarTerminos);
+    tipo.addEventListener("change", () => {
+      validarTipo();
+      mostrarSubformulario();
+    });
+
+
     // 10. Términos y condiciones
     function validateTerms() {
         const termsInput = document.getElementById('terms');

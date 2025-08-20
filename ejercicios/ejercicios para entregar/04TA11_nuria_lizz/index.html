@@ -64,12 +64,20 @@
             </div>
 
             <div class="mb-3">
-                <label for="select">Tipo de Programador</label>
-                <select name="tipo" id="tipo">
+                <label for="tipo" class="form-label">Tipo de desarrollador</label>
+                <select id="tipo" class="form-select" required>
+                    <option value="">Selecciona una opción</option>
                     <option value="backend">Backend</option>
-                    <option value="Frontend">Frontend</option>
-                    <option value="Fullstack">Fullstack</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="fullstack">Fullstack</option>
                 </select>
+                <div class="error-msg" id="error-tipo"></div>
+            </div>
+
+            <div id="subformulario" class="mb-3" style="display: none;">
+                <label class="form-label">Tecnologías</label>
+                <div id="opcionesTecnologia">
+                </div>
             </div>
 
             <div class="mb-3">
