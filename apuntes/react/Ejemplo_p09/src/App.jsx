@@ -24,7 +24,7 @@ export default function App() {
       </Section>
 
       {/* Card con children + footer por prop */}
-      <Card title="Quiénes somos" footer={<em>+10 años construyendo productos digitales.</em>}>
+      <Card title="Quiénes somos" footer={<em>+10 años construyendo productos digitales.</em>} highlight = {Card.highlight}>
         Somos un equipo multidisciplinar de frontend, backend y diseño.
       </Card>
 
